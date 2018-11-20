@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>JS Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+</head>
+<body>
+
+  <h1>JavaScript Calculator</h1>
+  <div class="container margin-header">
+
+    <input type="text" value="0" class="item item-header" id="currentValue" readonly></input>
+  
+    <button class="btn silver clear" onclick="calc('sp', 'ac')">AC</button>
+    <button class="btn silver negative" onclick="calc('sp', 'c')">C</button>
+    <button class="btn orange silver" onclick="calc('op', '%')">%</button>
+    <button class="btn orange" onclick="calc('op', '/')">÷</button>
+  
+    <button class="btn num" onclick="calc('num', '7')">7</button>
+    <button class="btn num" onclick="calc('num', '8')">8</button>
+    <button class="btn num" onclick="calc('num', '9')">9</button>
+    <button class="btn orange" onclick="calc('op', 'x')">x</button>
+  
+    <button class="btn num" onclick="calc('num', '4')">4</button>
+    <button class="btn num" onclick="calc('num', '5')">5</button>
+    <button class="btn num" onclick="calc('num', '6')">6</button>
+    <button class="btn orange subtract" onclick="calc('op', '-')">-</button>
+  
+    <button class="btn num" onclick="calc('num', '1')">1</button>
+    <button class="btn num" onclick="calc('num', '2')">2</button>
+    <button class="btn num" onclick="calc('num', '3')">3</button>
+    <button class="btn orange add" onclick="calc('op', '+')">+</button>
+  
+    <button class="btn num zero" onclick="calc('num', '0')">0</button>
+    <button class="btn num" onclick="calc('dec')">.</button>
+    <button class="btn equals" onclick="calc('equal', '')">=</button>
+    
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
